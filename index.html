@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+</head>
+
+<body class="flex flex-col items-center pt-10">
+    <h5 id="pass" class="text-3xl font-bold mb-8">Password Generator</h1>
+    
+    <div class="w-full max-w-md p-6">
+        <div class="flex items-center mb-4">
+            <label for="input" class="w-48">Length</label>
+            <input id="length" class="length input flex-1 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-sky-400 text-sky-400" 
+                   type="number" 
+                   placeholder="Enter length"> 
+        </div>
+
+        <div class="flex items-center mb-4">
+            <input type="checkbox" id="lower" class="lower w-4 h-4">
+            <label for="lower" class="ml-2 w-48">Lowercase Characters</label>
+        </div>
+
+        <div class="flex items-center mb-4">
+            <input id="upper" class="upper w-4 h-4" type="checkbox">
+            <label for="Upper" class="ml-2 w-48">Uppercase Characters</label>
+        </div>
+
+        <div class="flex items-center mb-4">
+            <input id="number" class="number w-4 h-4" type="checkbox" min="0" max="9">
+            <label for="number" class="ml-2 w-48">Number (0-9)</label>
+        </div>
+
+        <div class="flex items-center mb-6">
+            <input id="special" class="special w-4 h-4" type="checkbox">
+            <label for="Special" class="ml-2 w-48">Special Characters</label>
+        </div>
+
+        <div class="flex justify-center">
+            <button id="btn" class="clear bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-600 transition-colors w-full select-none">
+                Generator Password
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
