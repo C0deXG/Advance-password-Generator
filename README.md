@@ -27,7 +27,7 @@
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/password-generator.git
+git clone https://github.com/C0deXG/Advance-password-Generator.git
 
 # Navigate to the project directory
 cd password-generator
